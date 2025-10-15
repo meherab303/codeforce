@@ -4,28 +4,18 @@ int main()
 {
   
   int n;cin>>n;
-  vector<string>v;
-  for(int i=0;i<n;i++){
-    string s;
-    cin>>s;
-    int count=0;
+  map<string,int>regis;
 
-    for(int j=0;j<v.size();j++){
-      if(v[j]==s){
-        count++;
-      }  
-    }
-
-    if(count==0){
-        cout<<"OK"<<endl;
-    }else{
-        string s1=s+to_string(count);
-        cout<<s1<<endl;
-        count=0;
-    }
-    v.push_back(s);
-   
+ while(n--){
+  string s;cin>>s;
+  if(regis.find(s)!=regis.end()){
+    cout<<s+to_string(regis[s])<<endl;
+    regis[s]++;
+  }else{git
+    regis[s]=1;
+    cout<<"OK"<<endl;
   }
+ }
  
   return 0;
 }

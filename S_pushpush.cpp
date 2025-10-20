@@ -13,7 +13,9 @@ int main()
         dq.push_front(x);
     }
   } 
+
   if(n%2!=0)reverse(dq.begin(),dq.end());
+  
   for(int i=0;i<n;i++){
     cout<<dq[i]<<" ";
   }

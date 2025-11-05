@@ -1,0 +1,3 @@
+Initial difference array: 0 2 3 -4 7 6 0 
+Updated difference array: 0 4 12 -4 7 1 -6 
+Final updated main array: 4 16 12 19 20 

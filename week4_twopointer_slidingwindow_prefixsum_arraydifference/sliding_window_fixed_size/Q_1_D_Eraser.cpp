@@ -8,7 +8,7 @@ int main()
     int n,k;cin>>n>>k;
     string s;cin>>s;
 
-    int l=0,r=0,count=0;
+    int r=0,count=0;
     
     while(r<n){
 

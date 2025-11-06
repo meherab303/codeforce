@@ -62,3 +62,10 @@ int main() {
 
     return 0;
 }
+
+
+
+// main concept: 
+// 1.kon index er contribution koto eita age ber korbo 
+//2.then diff er array prefix sum ber korbo
+//3.then according to question prefix sum er basis e kaj korbo 

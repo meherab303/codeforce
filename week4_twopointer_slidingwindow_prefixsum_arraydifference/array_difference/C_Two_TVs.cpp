@@ -33,4 +33,4 @@ int main()
 
 // ei problem er main concept:
 // kono specific time e jodi 2 er odhik program chole tahole she shob gula show dekhte parbena.
-// jei time er contribution map e ashbena tar mane oi time e 2 er odhik program kokhonoi cholbena.
+// jei time er contribution map e ashbena tar mane oi time e 2 er odhik program kokhonoi cholbena.c

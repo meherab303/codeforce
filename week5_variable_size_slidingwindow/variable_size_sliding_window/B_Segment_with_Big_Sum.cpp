@@ -23,12 +23,12 @@ int main()
     if(sum>=k){
         good_seg=min(good_seg,r-l+1);
     }
-    
+
     while(sum>=k && l<=r){   //jeheto at least sum and shortest segment tai sum jokhon 20 hoye jabe tokhon ar barabona.minus korbo
         sum-=v[l];
         l++;
         if(sum>=k){
-             good_seg=min(good_seg,r-l+1); //prottektabar minus kore check korbo
+             good_seg=min(good_seg,r-l+1); //prottektabar minus kore check korbo jodi sum still 20 ba er beshi hoi .
         }
     }
     r++;

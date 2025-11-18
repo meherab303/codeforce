@@ -40,3 +40,21 @@ int main()
 //set and multiset e ja ja kora jai shob e kora jai pbds e 
 // shudu multiset e erase hoina.
 //extra 2ta fucntion i)find_by_order(value) ii)order_of_key(idx)
+
+// PBDS as set (ordered_set<T>): ❌ unsupported
+
+//1. find(x)
+
+//2. count(x)
+
+
+
+// PBDS as multiset (ordered_set<pair<T,int>>): ❌ unsupported
+
+//1. direct find(value)
+
+//2. direct erase(value)
+
+//3. count(value)
+
+//4. erase all values at once

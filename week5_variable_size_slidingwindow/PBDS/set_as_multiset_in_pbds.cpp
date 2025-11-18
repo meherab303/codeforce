@@ -7,36 +7,39 @@ using namespace __gnu_pbds;
 using namespace std;
 template<typename T>using pbds=tree<T,null_type,less<T>,rb_tree_tag,tree_order_statistics_node_update>;
 
-//less_equal dile multiset hishebe use hbe.
+
 int main()
 
 {
     int n;cin>>n;
 
-    pbds<int>p;
+    pbds<pair<int,int>>p;    // pair akare nile value same holeo idx unique thakbe.tokhon set ke multiset hishebei use kora jabe.and erase hbe.
 
     for(int i=0;i<n;i++){
         int x;cin>>x;
-        p.insert(x);
+        p.insert({x,i});
     }
 
-    for(auto val:p){
-        cout<<val<<" ";
+    for(auto [val,idx]:p){
+        cout<<val<<" "<<idx<<" "<<endl;
     }
-
     cout<<endl;
 
-    auto it=p.find_by_order(3);
-    cout<<*it<<endl;
+    p.erase({7,3});
 
-    int val=p.order_of_key(7);
-    cout<<val<<endl;
+    
 
+    
+    for(auto [val,idx]:p){
+        cout<<val<<" "<<idx<<" "<<endl;
+    }
+    cout<<endl;
+
+
+
+
+    
   
    
   return 0;
 }
-
-//set and multiset e ja ja kora jai shob e kora jai pbds e 
-// shudu multiset e erase hoina.
-//extra 2ta fucntion i)find_by_order(value) ii)order_of_key(idx)

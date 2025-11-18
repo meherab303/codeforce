@@ -7,7 +7,7 @@ using namespace __gnu_pbds;
 using namespace std;
 template<typename T>using pbds=tree<T,null_type,less<T>,rb_tree_tag,tree_order_statistics_node_update>;
 
-//less_equal dile multiset hishebe use hbe.
+
 int main()
 
 {
@@ -23,20 +23,20 @@ int main()
     for(auto val:p){
         cout<<val<<" ";
     }
-
     cout<<endl;
 
-    auto it=p.find_by_order(3);
-    cout<<*it<<endl;
+    p.erase(7);   //set e erase hoi.
 
-    int val=p.order_of_key(7);
-    cout<<val<<endl;
+     for(auto val:p){
+        cout<<val<<" ";
+    }
+    cout<<endl;
 
+
+
+
+    
   
    
   return 0;
 }
-
-//set and multiset e ja ja kora jai shob e kora jai pbds e 
-// shudu multiset e erase hoina.
-//extra 2ta fucntion i)find_by_order(value) ii)order_of_key(idx)

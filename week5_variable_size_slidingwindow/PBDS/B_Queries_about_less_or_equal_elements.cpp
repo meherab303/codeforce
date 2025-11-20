@@ -17,25 +17,18 @@ int main()
   cin>>n>>m;
 
   pbds<int>p;
-  vector<int>b(m);
+  
   for(int i=0;i<n;i++){
     int x;cin>>x;
     p.insert(x);
   }
   
   for(int j=0;j<m;j++){
-    cin>>b[j];
+    int x;cin>>x;
+    int less_equal=p.order_of_key(x+1);  // jeheto less or eqaul tai +1 kore check korte hobe.like jodi 10 shoho chai tahole 11 er niche jotogula ache .
+    cout<<less_equal<<" ";
   }
 
-  for(auto val:b){
-
-    int x=p.order_of_key(val+1);  // jeheto less or eqaul tai +1 kore check korte hobe.like jodi 10 shoho chai tahole 11 er niche jotogula ache .
-    cout<<x<<" ";
-
-  }
-    
-
-  
    
   return 0;
 }
